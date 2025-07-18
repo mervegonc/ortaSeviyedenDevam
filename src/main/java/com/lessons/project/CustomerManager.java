@@ -1,19 +1,17 @@
 package com.lessons.project;
 public class CustomerManager implements ICustomerService{
 
-    ICustomerDal iCustomerDal;
+    ICustomerDal customerDal;
 
-    public CustomerManager(ICustomerDal iCustomerDal) {
-        this.iCustomerDal = iCustomerDal;
+    public CustomerManager(ICustomerDal customerDal) {
+
+        this.customerDal = customerDal;
     }
 
-    public void Add() {
-        //work codes
-        iCustomerDal.add();
-    }
+
 
     @Override
     public void add() {
-        
+       customerDal.add();
     }
 }
