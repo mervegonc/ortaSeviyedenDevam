@@ -1,5 +1,5 @@
 package com.lessons.project;
-public class CustomerManager {
+public class CustomerManager implements ICustomerService{
 
     ICustomerDal iCustomerDal;
 
@@ -12,4 +12,8 @@ public class CustomerManager {
         iCustomerDal.add();
     }
 
+    @Override
+    public void add() {
+        
+    }
 }
